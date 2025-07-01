@@ -22,24 +22,6 @@ body{
       margin-left: -100px;
     }
 
-
-
-
-.container button {
-  background-color: #ffdd00;
-  border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  margin-left: 10px;
-  font-size: 20px;
-  color: black;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.container button:hover {
-  background-color: #f4c400;
-}
 .container {
   width: 50%;
   max-width: 600px;
@@ -136,14 +118,43 @@ body{
 }
 
 .promo-images {
-  flex: 1 1 45%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  flex:  40%;
 }
 
 .promo-images img {
-  width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
+  width: 80%;
+  border-radius: 50px;
+  margin-left: 150px; 
+  display: block;    
+}
+
+pre{
+  color: #0c4ccc;               
+  font-weight: bold;            
+  font-size: 25px;              
+  font-family: 'Poppins', sans-serif; 
+  white-space: pre-wrap;       
+  line-height: 1.4;
+}
+
+
+nav {
+  display: flex;              /* Enables horizontal layout */
+  gap: 60px;                  /* Adds space between <a> elements */
+  padding: 9px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  color: #18bf44;
+  border-bottom: 2px solid #df1111;
 }
